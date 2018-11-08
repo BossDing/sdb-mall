@@ -19,7 +19,7 @@ info:
 spring:
     # 环境 dev|test|prod
     profiles:
-        active: dev
+        active: test
     # jackson时间格式化
     jackson:
         time-zone: GMT+8
@@ -33,9 +33,9 @@ spring:
     redis:
         open: false  # 是否开启redis缓存  true开启   false关闭
         database: 0
-        host:
+        host: 47.97.111.115
         port: 6379
-        password:    # 密码（默认为空）
+        password: a13579@$^*_    # 密码（默认为空）
         timeout: 6000ms  # 连接超时时长（毫秒）
         jedis:
           pool:
@@ -49,8 +49,8 @@ spring:
         add-mappings: false
     mail:
         host: smtp.163.com
-        username:
-        password:
+        username: senduobang@163.com
+        password: yjj380936
         properties:
           mail:
             smtp:
@@ -74,27 +74,27 @@ schedule:
 wechat:
   ma:
     msgDataFormat: JSON
-    appid:
-    secret:
-    mchId:
-    mchKey:
-    keyPath:
-    notifyUrl:
+    appid: wx00f587bd60fa7cab
+    secret: 753ebc7a415703a760b3a2fd38c84527
+    mchId: 1509790391
+    mchKey: zZkedWWOqcZsHAtk9yDAf0oHzz6bMv8K
+    keyPath: /var/weixin_cert/h5.p12
+    notifyUrl: http://sdbtest.s1.natapp.cc/sdb/pay/notify
   mp:
-    openAppId:
-    openAppSecret:
+    openAppId: wx6ad144e54af67d87
+    openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
     configs:
-      - appid:
-        secret:
-        token:
-        aesKey:
+      - appid: wx156a38ddb42d371c
+        secret: e5fffb05ac599d29f5bea08797a90129
+        token: sdb
+        aesKey: L8i0p6KLulge4gbC3c6WnlSCyDsE8w5BnxXYIXedwNz
 
 order:
   refund: false
 
 kuaidi100:
-  notifyUrl:
-  kuaidi100Key:
-  kuaidi100PollUrl:
+  notifyUrl: http://sdbtest.s1.natapp.cc/sdb/sys/logistics/notify
+  kuaidi100Key: NJYJWAex5671
+  kuaidi100PollUrl: http://www.kuaidi100.com/poll
 
 
