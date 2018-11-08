@@ -48,7 +48,7 @@ spring:
     resources:
         add-mappings: false
     mail:
-        host: smtp.163.com
+        host: 
         username:
         password:
         properties:
